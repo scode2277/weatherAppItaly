@@ -5,17 +5,23 @@
 }
 
 body {
-    background-image: url(https://bit.ly/4bcK1Hc);
+    background-image: url(./images/sky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100vh;
 }
 
+.fira-sans-extralight {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 main {
-    background-color: rgba(227, 193, 173, 0.85);
+    background-color: rgba(113, 208, 255, 0.515);
     position: relative;
-    top: 30%;
+    top: 20%;
     border: 1px solid;
     border-radius: 5px;
     min-width: 540px;
@@ -35,6 +41,7 @@ h1 {
     font-size: 16px;
     width: 70%;
     height: 42px;
+    font-family: 'Fira Sans';
 }
 
 #submit {
@@ -43,6 +50,9 @@ h1 {
     font-size: 16px;
     width: 5em;
     cursor: pointer;
+    background-color: #ffa0b0;
+    font-family: 'Fira Sans';
+    text-align: center;
 }
 
 #weather-wrapper {
@@ -56,18 +66,19 @@ h1 {
     display: flex;
     width: 50%;
 }
+
 #weather-data {
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 5px;
     padding: 1.5em;
     margin-top: 20px;
-  
+
     text-align: center;
     align-items: center;
     gap: 12px;
-  }
-  
-  #weather-data > img {
+}
+
+#weather-data>img {
     border-radius: 50%;
     background-color: lightskyblue;
-  }
+}
