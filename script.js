@@ -1,4 +1,12 @@
-async  function fetchWeather() {
+const searchInput = document.getElementById('search');
+
+searchInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        fetchWeather();
+    }
+});
+
+async function fetchWeather() {
     let searchInput = document.getElementById("search").value;
     const weatherDataSection = document.getElementById("weather-data");
     weatherDataSection.style.display = "block";
